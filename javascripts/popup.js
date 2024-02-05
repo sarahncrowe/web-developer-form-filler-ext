@@ -184,10 +184,6 @@ $(document).ready(function () {
 				throw new Error("Invalid JSON format");
 			}
 			
-			if (importedForm.url === '*'){
-				importedForm.name += '-global';
-			}
-			
 			var key = getRandomStorageId();
 			localStorage.setItem(key, JSON.stringify(importedForm));
 
